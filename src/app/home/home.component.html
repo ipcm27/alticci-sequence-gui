@@ -1,0 +1,27 @@
+<section class="d-flex flex-column align-items-center justify-content-center">
+  <div class="container">
+    <h1 class="title text-center my-4">Welcome to Alticci Generator</h1>
+    <div class="myCard">
+      <h6 class="second-title ">
+        Type a number to see the <strong>Alticci number</strong>
+      </h6>
+      <input class="number-input my-2" type="number" #input />
+      <button
+        class="btn btn-success"
+        type="submit"
+        (click)="getNumber(input.value)"
+      >
+        Generate
+      </button>
+      <div class=" p-4">
+        <h6 class="second-title ">
+          Your alticci<br />
+          number is:
+        </h6>
+        <h1 class="p-4 number">
+          {{ AlticciNumber }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>

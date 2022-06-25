@@ -1,0 +1,49 @@
+section {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 60s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.myCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100vh - 40vh;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 45px;
+}
+
+.number:after {
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.number:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* Typography */
+.title {
+  font: "arial";
+  color: white;
+}
